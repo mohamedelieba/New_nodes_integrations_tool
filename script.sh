@@ -35,5 +35,5 @@ echo '</Routes>
 scp file.txt  sdpuser@${HOST}:SDP_Req_Senders/file.txt
 
 # Use the aggregated file to define new peers on all Nodes
-ssh sdpuser@${HOST} "cd SDP_Req_Senders/ ; FDSRequestSender -u ${USERNAME} -p ${PASSWORD}_2022 file.txt > out.xml"
+ssh sdpuser@${HOST} "cd SDP_Req_Senders/ ; FDSRequestSender -u ${USERNAME} -p ${PASSWORD} file.txt > out.xml"
 done
